@@ -1,8 +1,8 @@
-# AUTHOR INFO
+# Secure Enterprise Network Design and Implementation
+
+## Author
 
 - Full Name: Karam Aboul-Hosn
-
-# Guidelines
 
 ## Introduction
 
