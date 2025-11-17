@@ -16,7 +16,7 @@ Under the `packet.tracer/` folder, find and download the `.pkt` file and open it
 
 ## Configuration and Verification Files
 
-Under the `configs/` folder, you will find a `.txt` file where I have included some configuration and verification IOS commands specific to each step taken to during the project implementation. 
+Under the `configs/` folder, you will find `.txt` files where I have included some configuration and verification IOS commands specific to each step taken during the project implementation. 
 
 Note that all devices in the `.pkt` file are *already* configured properly. The inclusion of configuration details is *strictly* for documentation purposes, as some key configurations for re-implementation are purposely not included. 
 
