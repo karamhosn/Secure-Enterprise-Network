@@ -29,3 +29,5 @@ Under the `images/` folder, you will find a `.png` file containing the network t
 The DMZ has a single point of failure since it's designated L2 switch is only connected to one Cisco ASA Firewall. Implementing redundancy would require the utilization of both Cisco ASA Firewalls, which is not included in this particular network design. 
 
 The firewall ACLs are configured to only allow HTTP web traffic, DNS, and ICMP with the appropriate security zones and levels. When it comes to the firewalls, part of this lab's educational focus was on *how* to configure firewall ACLs, rather than taking the time to fully configure them. It is understood that HTTP provides insecure web-communication as compared to its HTTPS counterpart.
+
+Simple passwords that use common words or phrases and that lack complexity are used in this demo for routers, switches, WiFi networks, and accounts. This is for demo purposes only; in a real environment, strong passwords should be used as well as being enforced through a rigorous password policy.
