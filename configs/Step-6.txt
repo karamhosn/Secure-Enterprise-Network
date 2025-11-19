@@ -1,3 +1,0 @@
-6. Static IP address DMZ/INSIDE-SERVER devices.
-
-refer to addressing-tables.pdf
