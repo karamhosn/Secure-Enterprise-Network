@@ -1,0 +1,38 @@
+2.b STP Portfast and BPDUguard configs on all access ports.
+
+
+L2 Switches (Excluding DMZ-SW and SERVER-SW):
+
+int range fa0/3-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+
+do wr
+
+
+SERVER-SW:
+
+int range fa0/3-6, fa0/8-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+
+do wr
+
+
+DMZ-SW:
+
+int range fa0/1-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+
+do wr
+
+
+
+
+
+
+

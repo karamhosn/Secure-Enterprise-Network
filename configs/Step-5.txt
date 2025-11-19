@@ -1,0 +1,57 @@
+5. HSRP and Inter-VLAN routing on L3 switches + ip DHCP helper addresses.
+
+
+To check on CORE-SW1 enter command (do) show start and click more until you see something like:
+
+!
+interface Vlan10
+ mac-address 0007.ecdb.b001
+ ip address 192.168.10.3 255.255.255.0
+ ip helper-address 10.11.11.38
+ standby 10 ip 192.168.10.1
+!
+interface Vlan20
+ mac-address 0007.ecdb.b002
+ ip address 172.16.0.3 255.255.0.0
+ ip helper-address 10.11.11.38
+ standby 20 ip 172.16.0.1
+!
+interface Vlan50
+ mac-address 0007.ecdb.b003
+ ip address 10.20.0.2 255.255.0.0
+ ip helper-address 10.11.11.38
+ standby 50 ip 10.20.0.1
+!
+interface Vlan90
+ mac-address 0007.ecdb.b004
+ ip address 10.11.11.34 255.255.255.224
+ standby 90 ip 10.11.11.33
+!
+
+
+To check on CORE-SW2 enter command (do) show start and click more until you see something like:
+
+!
+interface Vlan10
+ mac-address 0007.ec61.7001
+ ip address 192.168.10.2 255.255.255.0
+ ip helper-address 10.11.11.38
+ standby 10 ip 192.168.10.1
+!
+interface Vlan20
+ mac-address 0007.ec61.7002
+ ip address 172.16.0.2 255.255.0.0
+ ip helper-address 10.11.11.38
+ standby 20 ip 172.16.0.1
+!
+interface Vlan50
+ mac-address 0007.ec61.7003
+ ip address 10.20.0.3 255.255.0.0
+ ip helper-address 10.11.11.38
+ standby 50 ip 10.20.0.1
+!
+interface Vlan90
+ mac-address 0007.ec61.7004
+ ip address 10.11.11.35 255.255.255.224
+ standby 90 ip 10.11.11.33
+!

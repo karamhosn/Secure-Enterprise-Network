@@ -1,0 +1,51 @@
+11. Wireless network configuration.
+
+
+Connect NET-SEC-PC to WLC.
+
+
+NET-SEC-PC:
+
+Set static IP address in the same subnet 10.20.0.0/16. 
+
+The DNS Server IP is 10.11.11.37, so set it under IP configuration.
+
+Open web browser:
+- visit WLC interface at its IP: http://10.20.0.10.
+- Username: Cisco
+- Pass: Cisco123
+- IP configuration and system name
+- Create EMPLOYEES WIFI Network with WPA2 and pass Cisco123
+- Apply changes and save configurations
+
+Enter command prompt:
+- Ping WLC at 10.20.0.10 to ensure it completed reboot.
+
+Open web browser:
+- visit WLC interface at its IP: https://10.20.0.10.
+- Log in
+- Navigate to WLANs tab
+- Create new WLAN called AUDITORS WIFI with SSID AUDITORS and click apply
+- Click enable under General
+- Choose WPA+WPA2, enable WPA policy, enable PSK, set password Cisco123, and click apply under Security -> Layer 2
+Create new WLAN called CORPORATE WIFI with SSID CORPORATE and click apply
+- Click enable under General
+- Choose WPA+WPA2, enable WPA policy, enable PSK, set password Cisco123, and click apply under Security -> Layer 2
+Create new WLAN called GUEST WIFI with SSID GUEST and click apply
+- Click enable under General
+- Choose WPA+WPA2, enable WPA policy, enable PSK, set password Cisco123, and click apply under Security -> Layer 2
+- Click Save Configuration in the top right on the main window
+
+
+Hover over each LAP and see that each one provides WLANs for EMPLOYEES WIFI, AUDITORS WIFI, CORPORATE WIFI, and GUEST WIFI.
+
+Configure wireless devices to DHCP and connect any wireless device to any WiFi network to test for connectivity (it will connect to the LAP which it deems to have strongest connection).
+
+
+
+
+
+
+
+
+
