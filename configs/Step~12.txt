@@ -74,7 +74,3 @@ do wr
 
 
 Pick up an IP phone and dial another IP phone to verify connectivity.
-
-
-
-
