@@ -1,0 +1,69 @@
+7. DHCP server device configuration.
+
+
+serverPool:
+
+Default Gateway: 0.0.0.0		
+
+DNS Server: 0.0.0.0	
+
+Start IP Address: 0.0.0.0
+
+Subnet Mask: 0.0.0.0
+
+Maximum Number of Users: 0
+
+TFTP Server: 0.0.0.0
+
+WLC Address: 0.0.0.0
+
+
+WLAN-Pool:
+
+Default Gateway: 10.20.0.1
+
+DNS Server: 10.11.11.37
+
+Start IP Address: 10.20.0.11
+
+Subnet Mask: 255.255.0.0
+
+Maximum Number of Users: 1000
+
+TFTP Server: 0.0.0.0
+
+WLC Address: 10.20.0.10
+
+
+LAN-Pool:
+
+Default Gateway: 172.16.0.1
+
+DNS Server: 10.11.11.37
+
+Start IP Address: 172.16.0.11
+
+Subnet Mask: 255.255.0.0
+
+Maximum Number of Users: 1000
+
+TFTP Server: 0.0.0.0
+
+WLC Address: 0.0.0.0
+
+
+MGT-Pool:
+
+Default Gateway: 192.168.10.1
+
+DNS Server: 10.11.11.37
+
+Start IP Address: 192.168.10.11
+
+Subnet Mask: 255.255.255.0
+
+Maximum Number of Users: 200
+
+TFTP Server: 0.0.0.0
+
+WLC Address: 0.0.0.0

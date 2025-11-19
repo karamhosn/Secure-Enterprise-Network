@@ -1,0 +1,98 @@
+2. VLAN assignment plus all access and trunk ports on L2 and L3 switches.
+
+
+L2 SWITCHES (Excluding DMZ-SW and SERVER-SW):
+
+int range fa0/1-2
+switchport mode trunk
+exit
+
+vlan 10
+name MGT
+vlan 20
+name LAN
+vlan 50
+name WLAN
+vlan 70
+name VOIP
+vlan 199
+name BLACKHOLE
+exit
+
+int range fa0/3 - 4
+switchport mode access
+switchport access vlan 20
+exit
+
+int range fa0/5-6
+no switchport access vlan 70
+switchport voice vlan 70
+exit
+
+int fa0/7
+switchport mode access
+switchport access vlan 50
+exit
+
+int range fa0/8-24, gig0/1-2
+switchport mode access
+switchport access vlan 199
+shutdown
+exit
+
+do wr
+
+
+SERVER-SW:
+
+int range fa0/1-2, fa0/7
+switchport mode trunk
+exit
+
+vlan 10
+name MGT
+vlan 20
+name LAN
+vlan 50
+name WLAN
+vlan 70
+name VOIP
+vlan 90
+name INSIDE-SERVERS
+exit
+
+int range fa0/3 - 5
+switchport mode access
+switchport access vlan 90
+exit
+
+int fa0/6
+switchport mode access
+switchport access vlan 50
+exit
+
+do wr
+
+
+L3 SWITCHES:
+
+int range gig1/0/3-8
+switchport mode trunk
+exit
+
+vlan 10
+name MGT
+vlan 20
+name LAN
+vlan 50
+name WLAN
+vlan 70
+name VOIP
+vlan 90
+name INSIDE-SERVERS
+exit
+
+do wr
+
+
+

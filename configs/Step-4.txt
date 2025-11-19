@@ -1,0 +1,3 @@
+4. Subnetting and IP addressing.
+
+refer to addressing-tables.pdf
