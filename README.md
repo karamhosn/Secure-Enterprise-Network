@@ -12,7 +12,7 @@ Under the `docs/` folder, you will find a `.pdf` file containing the project des
 
 ## How To Open The Project
 
-Under the `packet.tracer/` folder, find and download the `.pkt` file and open it using Cisco Packet Tracer version 9.0.0.
+Under the `packet-tracer/` folder, find and download the `.pkt` file and open it using Cisco Packet Tracer version 9.0.0.
 
 ## Configuration and Verification Files
 
